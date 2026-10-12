@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sumbu Roastery — Katalog Kopi Specialty</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="wrap">
+<a class="logo" href="#top"><i></i>Sumbu Roastery</a>
+<div class="links"><a href="#katalog">Katalog</a><a href="#proses">Proses</a><a href="#kontak">Kontak</a></div>
+<button class="btn cart" id="cartBtn">Daftar Pesanan <b id="count">0</b></button>
+</div></nav>
+
+<main id="top" class="wrap">
+<header class="hero">
+<div>
+<span class="eyebrow">Specialty Coffee · Sumatera Utara</span>
+<h1>Biji kopi Nusantara, disangrai dengan presisi.</h1>
+<p>Single origin dan blend pilihan dari petani Mandailing, Gayo, Toraja, dan Flores. Sangrai segar setiap minggu, siap untuk kafe, kantor, dan seduhan rumah.</p>
+<div class="row"><a class="btn" href="#katalog">Lihat Katalog</a><a class="btn ghost" href="#kontak">Pesan Grosir</a></div>
+</div>
+<div class="hero-art">
+<svg viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="50" rx="30" ry="40" transform="rotate(25 50 50)" fill="#6b3a1b"/><path d="M50 12 C62 35 38 62 52 90" transform="rotate(25 50 50)" stroke="#2a1608" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+<span><em>Roasted weekly</em><em>Medan · ID</em></span>
+</div>
+</header>
+<div class="stats"><div><b>12</b><small>Origin petani</small></div><div><b>48 jam</b><small>Sangrai ke kirim</small></div><div><b>86+</b><small>Skor cupping</small></div><div><b>150+</b><small>Mitra kafe</small></div></div>
+
+<section id="katalog">
+<div class="head"><div><span class="eyebrow">Katalog</span><h2>Pilih biji favoritmu</h2></div>
+<div class="tools" id="tools">
+<button class="chip on" data-f="semua">Semua</button><button class="chip" data-f="Single Origin">Single Origin</button><button class="chip" data-f="Blend">Blend</button>
+<input type="search" id="q" placeholder="Cari nama / asal…" aria-label="Cari produk"></div></div>
+<div class="grid" id="grid"></div>
+</section>
+</main>
+
+<section id="proses" class="band"><div class="wrap">
+<span class="eyebrow">Dari kebun ke cangkir</span><h2 style="font-size:clamp(1.8rem,1.3rem + 1.8vw,2.7rem);margin-top:.6rem">Empat langkah kualitas</h2>
+<div class="steps">
+<div><b>01</b><h3>Seleksi</h3><p>Green bean dipilih langsung dari kebun mitra dengan sortasi ketat.</p></div>
+<div><b>02</b><h3>Roasting</h3><p>Profil sangrai dikurasi per origin untuk menonjolkan karakter terbaik.</p></div>
+<div><b>03</b><h3>Cupping</h3><p>Setiap batch dicicipi dan dinilai sebelum dikemas.</p></div>
+<div><b>04</b><h3>Pengiriman</h3><p>Kemasan one-way valve, dikirim maksimal 48 jam setelah sangrai.</p></div>
+</div></div></section>
+
+<footer id="kontak"><div class="wrap">
+<div><b style="font-family:var(--d);color:var(--ink);font-size:1.1rem">Sumbu Roastery</b><br>Jl. Contoh No. 12, Medan, Sumatera Utara</div>
+<div>pesan@sumburoastery.id<br>WhatsApp +62 812-0000-0000</div>
+<div>© 2026 Sumbu Roastery. Katalog demo.</div>
+</div></footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
